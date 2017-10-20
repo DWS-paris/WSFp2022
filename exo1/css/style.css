@@ -7,6 +7,10 @@ body{
 main{
     border: 5px solid black;
     padding: 50px;
+    height: 150px;
+
+    /* Bloquer les enfants dans le parent (pour la position absolute) */
+    position: relative;
 }
 
 section{
@@ -14,14 +18,14 @@ section{
     background-color: grey;
     height: 50px;
     width: 50px;
+
+    /* Changer le positionnement */
+    position: absolute;
 }
 
 /* Sélectionner une ID */
 #greenSection{
-    background-color: green;
-
-    /* Changer le positionnement */
-    position: absolute;
+    background-color: green;  
 
     /* Déplacer la balise */
     right: 0;
@@ -31,9 +35,6 @@ section{
 #yellowSection{
     background-color: yellow;
 
-    /* Changer le positionnement */
-    position: absolute;
-
     /* Déplacer la balise */
     top: 0;
     left: 0;
@@ -42,9 +43,6 @@ section{
 #redSection{
     background-color: red;
 
-    /* Changer le positionnement */
-    position: absolute;
-
     /* Déplacer la balise */
     bottom: 0;
     left: 0;
@@ -52,9 +50,6 @@ section{
 
 #greySection{
     background-color: grey;
-
-    /* Changer le positionnement */
-    position: absolute;
 
     /* Déplacer la balise */
     top: 0;
