@@ -1,0 +1,53 @@
+/* 
+    - Supprimer toutes les marges de toutes les balises
+    - Ajouter une bordure à la balise main
+    - Ajouter une marge ext. de 20 px sur la balise main
+    - Ajouter une marge int. de 20 px sur la balise main
+    - La couleur du texte des sections est blanche
+    - Ajouter une couleur de fond différente pour chaque section
+*/
+body{
+    background-color: #eee;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    border: 5px solid black;
+    margin: 100px 20px;
+    padding: 20px;
+
+    width: 300px;
+    height: 200px;
+}
+
+section{
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* 
+Sélectionner une balise par son ID
+*/
+#greenSection{
+    background-color: green;
+}
+
+#yellowSection{
+    background-color: yellow;
+}
+
+#redSection{
+    background-color: red;
+}
+
+#greySection{
+    background-color: grey;
+}
