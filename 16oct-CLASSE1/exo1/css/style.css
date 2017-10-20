@@ -1,0 +1,89 @@
+/* 
+Reset
+selecteur{ propriété: valeur; }
+*/
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+/* Aligner au centre tout le contenu de la page */
+body{
+    text-align: center;
+}
+
+/* Faire en sorte que les images ne dépassent pas leur parent */
+img{
+    max-width: 100%;
+}
+
+/* Centrer le tableau */
+table {
+    margin: auto;
+}
+
+main{
+    /* Limiter la taile du contenu principal à 600px */
+    max-width: 600px;
+
+    /* Centrer une balise de type bloc limitée en largeur */
+    margin: auto;
+
+    /* Ajouter une marge int. */
+    padding: 160px 20px 50px 20px;
+}
+
+/* Ajouter une couleur de fond dans l'ouverture de la page plus 20px de marge int. */
+header{
+    background-color: grey;
+    padding: 20px;
+
+    /* Changer la couleur de la police */
+    color: white;
+
+    /* Fixer le header en haut de la page */
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Faire passer le span de la balise h1 à la ligne */
+h1 span{
+    /* Changer le type de balise : display */
+    display: block;
+    font-size: 12px;
+}
+
+/* Configurer la navigation principale */
+nav li{
+    /* Passer le LI sur une ligne */
+    display: inline-block;
+    
+    /* Ajouter de la marge ext */
+    margin: 5px;
+
+    /* Ajouter 5px de marge int. */
+    padding: 5px;
+
+    border: 5px solid white;
+}
+
+/* 
+Bloquer le footer en bas de la page
+*/
+    footer {
+
+        /* Changer le positionnement de la balise */
+        position: fixed;
+
+        /* Placer la balise en bas de la page */
+        bottom: 0;
+
+        /* Changer la largeur */
+        width: 100%;
+
+        background-color: grey;
+        padding: 10px;
+        color: white;
+    }
+/**/

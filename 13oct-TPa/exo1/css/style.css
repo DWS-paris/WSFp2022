@@ -1,0 +1,103 @@
+/* 
+Sélectionner toutes les balises pour supprimer les marges
+*/
+    *{
+        margin: 0; /* ext. */
+        padding: 0; /* int. */
+    }
+/**/
+
+/* 
+Mini responsive
+*/
+    header, main, footer{
+        /* Définir la largeur maximale */
+        max-width: 600px;
+
+        /* Centrer une balise de type block réduite en taille */
+        margin: auto;
+
+        padding: 20px;
+    }
+/**/
+
+
+/* 
+Sélecteur par balise html (tag)
+*/
+    h1, h2{
+        color: red;
+    }
+/**/
+
+/* 
+Gestion du header
+*/
+  header{
+      /* Ajouter une bordure sur la balise header */
+      border: 5px solid red;
+
+      /* Ajouter une mage intérieur de 20px */
+      padding: 20px;
+
+      /* Ajouter une marge exterieur */
+      /* margin: 20px; */
+  }  
+/**/
+
+/*
+Ajouter une couleur de fond sur toute la page
+*/
+  body{
+      /* Référence hexadécimale commence par '#' */
+      background-color: #eee;
+
+      /* Aligner au centre tous les textes */
+      text-align: center;
+  }
+/**/
+
+/* 
+La gestion des textes
+*/
+  p{
+      /* Changer la couleur */
+      color: black;
+
+      /* Changer la taille de la police */
+      font-size: 20px;
+
+      /* Changer l'inter-lignage */
+      line-height: 1.5;
+
+      /* Passer le text en gras */
+      font-weight: bold;
+
+      /* Passer le text en italic */
+      font-style: italic;
+
+      /* Passer le texte en majuscule */
+      text-transform: uppercase;
+  }
+/**/
+
+/* 
+Gestion des liens
+*/
+  a{
+      /* Gérer le soulignement */
+      text-decoration: none;
+  }
+
+  a[target="_blank"]{
+      text-decoration: underline;
+  }
+/**/
+
+/* 
+Modifier le type de balise
+*/
+  header li{
+      display: inline;
+  }
+/**/

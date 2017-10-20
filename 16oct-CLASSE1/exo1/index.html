@@ -1,0 +1,142 @@
+<!-- 
+
+    - Créer un document de base HTML
+    - Ajouter une ouverture de page (header)
+        - 1 titre principal
+        - 1 navigation principale contenant 4 liens (nav + ul + li + a)
+            - Home
+            - A propos
+            - Portfolio
+            - Contacts
+    - Ajouter une zone de contenu principal (main)
+        - Ajouter un sous-titre "A propos"
+        - Ajouter un paragraphe de lorem ipsum
+        - Ajouter un tableau contenant 3 colonnes et 3 lignes
+            - Col 1 = Skills
+            - Col 2 = Parcours
+            - Col 3 = Hobbie
+            ## Imaginez le contenu des lignes
+
+        - Ajouter un sous-titre "Portfolio"
+        - Ajouter 4 images dans une balise figure (penser au descriptif)
+        - Ajouter un sous-titre "Contacts"
+        - Ajouter un formulaire
+            - Champ nom/prénom
+            - Champ email
+            - Champ message
+    - Ajouter une fermeture de page (footer)
+        - Ajouter une ligne de texte "Under MIT Licence"
+
+    
+    - Ajouter une feuille de style et supprimer toutes les marges de toutes les balises
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>16 octobre P2022 classe 1 : exo1</title>
+
+        <!-- Importer une feuille de style -->
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        
+        <!-- Ouverture de la page -->
+        <header>
+            <h1>Julien Noyer <span>Développeur et formateur FrontEnd</span></h1>
+
+             <!-- Navigation principale -->
+             <nav>
+                 <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contacts</a></li>
+                 </ul>
+             </nav>
+
+        </header>
+
+        <!-- Contenu principal -->
+        <main>
+
+            <h2>A propos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis dolorem ut totam magnam porro quo, blanditiis nisi aperiam vitae velit labore pariatur eius architecto consequatur sint quis commodi magni.</p>
+
+            <table>
+                <tr>
+                    <th>Skills</th>
+                    <th>Parcours</th>
+                    <th>Hobbies</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Intégrateur Web</td>
+                    <td>Arduino</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Webdesigner</td>
+                    <td>Cuisine</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Développeur Web</td>
+                    <td>DJing</td>
+                </tr>
+            </table>
+
+            <h2>Portfolio</h2>
+            <figure>
+                <img src="./img/ahm.jpg">
+                <figcaption>Site Web ArtHebdoMedias</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./img/idea.jpg">
+                <figcaption>Site Web IDEA</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./img/ilike.jpg">
+                <figcaption>Site Web iLike</figcaption>
+            </figure>
+
+            <figure>
+                <img src="./img/migoii.jpg">
+                <figcaption>Site Web Migoii</figcaption>
+            </figure>
+
+            <h2>Contacts</h2>
+            <h3>Envoyez-moi un email</h3>
+            <form action="contact.php">
+
+                <label for="userName">Nom/Prénom</label>
+                <input type="text" name="userName" id="userName">
+
+                <label for="userEmail">Email</label>
+                <input type="email" name="userEmail" id="userEmail">
+
+                <label for="userMessage">Message</label>
+                <textarea name="userMessage" id="userMessage"></textarea>
+
+                <button type="submit">Envoyer</button>
+
+            </form>
+
+            <h3>Contactez-moi par courier</h3>
+            <p>7, rue des Orteaux 75020 Paris</p>
+
+        </main>
+
+        <!-- Fermeture de la page -->
+        <footer>
+            <p>Under MIT Licence</p>
+        </footer>
+
+    </body>
+ </html>
