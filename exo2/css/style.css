@@ -1,0 +1,46 @@
+/* 
+    - Supprimer toutes les marges de toutes les balises
+    - Supprimer le soulignement des liens
+    - Le fond de li est grey
+    - La couleur des liens est blanche
+    - Les liens ne sont pas collés au bord des li
+    - Ajouter 20px de marge ext. sur la nav
+    - Ajouter une bordure de 5px noire sur la nav
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    margin: 20px;
+    border: 5px solid black;
+
+    /* Aligner les liens à droite */
+    text-align: right;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    background-color: grey;
+    padding: 20px;
+
+    /* Changer le type de balise pour aligner les LI */
+    display: inline-block;
+}
+
+/* Sélectionner une ID */
+#homeLink{
+    background-color: black;
+
+    /* Changer le positionnement */
+    position: absolute;
+
+    /* Déplacer la balise */
+    left: 0;
+}
