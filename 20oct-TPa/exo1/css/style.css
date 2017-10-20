@@ -22,6 +22,9 @@ main{
 
     width: 300px;
     height: 200px;
+
+    /* Bloquer les enfants dans le parent */
+    position: relative;
 }
 
 section{
@@ -38,16 +41,41 @@ Sélectionner une balise par son ID
 */
 #greenSection{
     background-color: green;
+
+    /* Changer le positionnement de la balise (sortir la balise du flux logique) */
+    position: absolute;
+
+    /* Placer précisémment la balise */
+    bottom: 0;
+    right: 0;
 }
 
 #yellowSection{
     background-color: yellow;
+
+    /* Changer le positionnement de la balise (sortir la balise du flux logique) */
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
 }
 
 #redSection{
     background-color: red;
+
+    /* Changer le positionnement de la balise (sortir la balise du flux logique) */
+    position: absolute;
+
+    top: 0;
+    right: 0;
 }
 
 #greySection{
     background-color: grey;
+
+    /* Changer le positionnement de la balise (sortir la balise du flux logique) */
+    position: absolute;
+
+    top: 0;
+    left: 0;
 }
