@@ -12,22 +12,48 @@ main{
 section{
     padding: 10px;
     background-color: grey;
+    height: 50px;
+    width: 50px;
 }
 
 /* Sélectionner une ID */
 #greenSection{
     background-color: green;
+
+    /* Changer le positionnement */
+    position: absolute;
+
+    /* Déplacer la balise */
+    right: 0;
+    bottom: 0;
 }
 
 #yellowSection{
     background-color: yellow;
+
+    /* Changer le positionnement */
+    position: absolute;
+
+    /* Déplacer la balise */
+    top: 0;
+    left: 0;
 }
 
 #redSection{
     background-color: red;
+
+    /* Changer le positionnement */
+    position: absolute;
+
+    /* Déplacer la balise */
+    bottom: 0;
+    left: 0;
 }
 
 #greySection{
     background-color: grey;
+
+    /* Changer le positionnement */
+    position: absolute;
 }
 
