@@ -19,6 +19,9 @@ nav{
 
     /* Aligner les liens à droite */
     text-align: right;
+
+    /* Bloquer les enfants dans le parent */
+    position: relative;
 }
 
 a{
@@ -43,4 +46,19 @@ li{
 
     /* Déplacer la balise */
     left: 0;
+}
+
+footer{
+    margin: 20px;
+    border: 5px solid black;
+
+    /* Bloquer les enfants dans le parent */
+    position: relative;
+}
+
+
+/* Sélectionner la dernière balise LI du FOOTER */
+footer li:last-child{
+    position: absolute;
+    right: 0;
 }
