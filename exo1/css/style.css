@@ -55,5 +55,9 @@ section{
 
     /* Changer le positionnement */
     position: absolute;
+
+    /* Déplacer la balise */
+    top: 0;
+    right: 0;
 }
 
