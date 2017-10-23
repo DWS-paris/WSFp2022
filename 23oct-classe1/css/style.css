@@ -26,11 +26,16 @@ Reset
     li{
         /* Changer le type de balise pour aligner les LI */
         display: inline-block;
+        margin-left: 10px;
     }
 
     /* Sélectionner des balises par leur class */
     .siteLogo{
         font-size: 25px;
+    }
+
+    header, section{
+        margin-bottom: 50px;
     }
 
 /**/
@@ -54,7 +59,7 @@ Style header
     /* Placer le première LI à gauche */
     nav .siteLogo{
         position: absolute;
-        left: 0;
+        left: -10px;
         top: -5px;
     }
 /**/
@@ -68,5 +73,24 @@ Style main
 
         /* Centrer un bloc réduit en largeur */
         margin: auto;
+    }
+
+    h1{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    /* Sélectionner une balise par son ID */
+    #profilPicture{
+        width: 70px;
+
+        /* Habiller l'image avec le texte qui la suit */
+        float: left;
+        margin-right: 10px;
+
+        /* Transformer un carré en rond */
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
     }
 /**/
