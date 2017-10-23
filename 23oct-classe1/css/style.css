@@ -18,9 +18,19 @@ Reset
 
     a{
         text-decoration: none;
-        
+
         /* La couleur est la même que celle du parent */
         color: inherit;
+    }
+
+    li{
+        /* Changer le type de balise pour aligner les LI */
+        display: inline-block;
+    }
+
+    /* Sélectionner des balises par leur class */
+    .siteLogo{
+        font-size: 25px;
     }
 
 /**/
@@ -29,6 +39,7 @@ Reset
 Style header
 */
     header{
+        text-align: right;
         color: white;
         padding: 20px;
 
