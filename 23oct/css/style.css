@@ -11,3 +11,16 @@ Style du reset
         text-decoration: none;
     }
 /**/
+
+
+/* 
+Style header
+*/
+    header{
+        /* Le texte est en blanc */
+        color: white;
+
+        /* Ajouter une image de fond */
+        background-image: url('../img/back.jpg');
+    }
+/**/
