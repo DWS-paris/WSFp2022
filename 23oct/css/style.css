@@ -9,6 +9,17 @@ Style du reset
 
     a {
         text-decoration: none;
+        color: inherit;
+    }
+
+    /* Aligner les balises LI */
+    li{
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    img{
+        max-width: 100%;
     }
 /**/
 
@@ -16,11 +27,26 @@ Style du reset
 /* 
 Style header
 */
-    header{
+    header, footer{
         /* Le texte est en blanc */
         color: white;
 
         /* Ajouter une image de fond */
         background-image: url('../img/back.jpg');
+
+        padding: 20px;
+    }
+
+    /* Sélectionner une balise par sa classe */
+    .siteLogo{
+        font-size: 30px;
+    }
+
+    nav, footer ul, main {
+        /* Définir une largeur maximale */
+        max-width: 900px;
+
+        /* Centrer une balise de type block réduite en largeur */
+        margin: auto;
     }
 /**/
