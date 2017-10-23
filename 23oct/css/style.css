@@ -49,4 +49,39 @@ Style header
         /* Centrer une balise de type block réduite en largeur */
         margin: auto;
     }
+
+    h1 {
+        font-size: 35px;
+        margin: 20px auto;
+    }
+/**/
+
+/* 
+Style Main
+*/
+    /* Sélectionner une balise par son ID */
+    #profilPicture{
+
+        /* Arrondir le bloc */
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+
+        width: 50px;
+        height: 50px;
+
+        margin-right: 10px;
+
+        /* Habiller l'image avec le texte qui le suit */
+        float: left;
+    }
+
+    section{
+        margin-bottom: 30px;
+    }
+
+    #aboutSection p{
+        display: inline-block;
+        width: 49%;
+    }
 /**/
