@@ -3,6 +3,35 @@ Reset
 */
     /* Sélectionner toutes les balises */
     *{
+        /* Supprimer toutes les marges */
+        margin: 0; /* marge ext. */
+        padding: 0; /* marge int. */
+    }
+
+    /* 
+    Faire en sorte que les images ne soient 
+    jamais plus large que son parent 
+    */
+    img{
+        max-width: 100%;
+    }
+
+    a{
+        text-decoration: none;
         
+        /* La couleur est la même que celle du parent */
+        color: inherit;
+    }
+
+/**/
+
+/* 
+Style header
+*/
+    header{
+        color: white;
+        padding: 20px;
+
+        background-image: url("../img/back.jpg");
     }
 /**/
