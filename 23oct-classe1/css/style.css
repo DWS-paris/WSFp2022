@@ -45,4 +45,28 @@ Style header
 
         background-image: url("../img/back.jpg");
     }
+
+    /* Bloquer les enfants dans le parent */
+    nav{
+        position: relative;
+    }
+
+    /* Placer le première LI à gauche */
+    nav .siteLogo{
+        position: absolute;
+        left: 0;
+        top: -5px;
+    }
+/**/
+
+/* 
+Style main
+*/
+    main, nav{
+        /* Limiter la largeur maximale */
+        max-width: 600px;
+
+        /* Centrer un bloc réduit en largeur */
+        margin: auto;
+    }
 /**/
