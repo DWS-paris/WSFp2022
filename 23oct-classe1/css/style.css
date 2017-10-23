@@ -36,6 +36,18 @@ Reset
 
     header, section{
         margin-bottom: 50px;
+
+        /* Stopper le float */
+        clear: both;
+    }
+
+    h2{
+        color: white;
+        background-color: darkblue;
+        padding: 10px;
+        margin-bottom: 20px;
+
+        display: inline-block;
     }
 
 /**/
@@ -92,5 +104,10 @@ Style main
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%;
+    }
+
+    #aboutSection p{
+        display: inline-block;
+        width: 49%;
     }
 /**/
