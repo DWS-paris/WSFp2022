@@ -1,0 +1,9 @@
+/* 
+Style du reset
+*/
+    /* Supprimer toutes les marges de toutes les balises */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+/**/
