@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <!-- Configuration du document -->
+    <head>
+        <!-- Afficher les caractère spéciaux (é, ç, à, ...) -->
+        <meta charset="UTF-8">
+        <!-- Configuration du Responsive Design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Concordannce avec IE -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Titre du document (s'afficge dans l'onglet du navigateur) -->
+        <title>23 octobre TP site</title>
+
+        <!-- Ajouter une feuille de style -->
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <!-- Contenu à afficher -->
+    <body>
+
+        <!-- 
+            Une page HTML se découpe en 3 grandes parties :
+            - header : ouverture de la page
+            - main : contenu principal
+            - footer : fermeture de la page
+        -->
+
+        <!-- Ouverture de la page -->
+        <header>
+            <!-- Navigation principale -->
+            <nav>
+                <ul>
+                    <!-- Ajouter une classe siteLogo -->
+                    <li class="siteLogo">SpaceMan</li>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>         
+            </nav>
+        </header>
+
+        <!-- Contenu principal de la page -->
+        <main>
+
+            <!-- Découper le main en section -->
+            <section>
+                <!-- Titre principal -->
+                <h1>Sed ut perspiciatis unde omnis iste natus error</h1>
+
+                <img src="./img/profil.jpg" alt="Photo de profil SpaceMan" id="profilPicture">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi possimus dolor sint quidem perferendis eaque officiis architecto magnam deserunt, minima ab doloribus vitae earum molestias, suscipit vel sapiente incidunt nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi possimus dolor sint quidem perferendis eaque officiis architecto magnam deserunt, minima ab doloribus vitae earum molestias, suscipit vel sapiente incidunt nisi.</p>
+            </section>
+
+            <section id="aboutSection">
+                <!-- Sous-titre -->
+                <h2>Suscipit vel sapiente incidunt nisi</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi possimus dolor sint quidem perferendis eaque officiis architecto magnam deserunt, minima ab doloribus vitae earum molestias, suscipit vel sapiente incidunt nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi possimus dolor sint quidem perferendis eaque officiis architecto magnam deserunt, minima ab doloribus vitae earum molestias, suscipit vel sapiente incidunt nisi.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi possimus dolor sint quidem perferendis eaque officiis architecto magnam deserunt, minima ab doloribus vitae earum molestias, suscipit vel sapiente incidunt nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi possimus dolor sint quidem perferendis eaque officiis architecto magnam deserunt, minima ab doloribus vitae earum molestias, suscipit vel sapiente incidunt nisi.</p>
+            </section>
+
+            <section>
+                <h2>Lorem ipsum dolor sit amet consectetur</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi possimus dolor sint quidem perferendis eaque officiis architecto magnam deserunt, minima ab doloribus vitae earum molestias, suscipit vel sapiente incidunt nisi.</p>
+
+                <!-- Ajouter une image affichant sa description -->
+                <figure>
+                    <img src="./img/1.jpg">
+                    <figcaption>
+                        <!-- Avec figcaption il ne faut PAS renseigner alt sur l'image -->
+                        Projet 1
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./img/2.jpg">
+                    <figcaption>Projet 2</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./img/3.jpg">
+                    <figcaption>Projet 3</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./img/4.jpg">
+                    <figcaption>Projet 4</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h2>Eaque officiis architecto magnam deserunt</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi possimus dolor sint quidem perferendis eaque officiis architecto magnam deserunt, minima ab doloribus vitae earum molestias, suscipit vel sapiente incidunt nisi.</p>
+
+                <!-- Formulaire -->
+                <form action="contact.php">
+                    <!-- Ajouter un champ pour le nom -->
+                    <input type="text" name="username" placeholder="Nom">
+
+                    <!-- Ajouter un champ pour l'email -->
+                    <input type="email" name="userEmail" placeholder="Email">
+
+                    <!-- Ajouter une zone de texte pour le message -->
+                    <textarea name="userMessage" placeholder="Message"></textarea>
+
+                    <!-- Ajouter un bouton pour valider le formuliare -->
+                    <button type="submit">Envoyer</button>
+                </form>
+
+                <!-- Intégrer une carte GoogleMaps -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.71030580585!2d2.364985815266388!3d48.82558857928417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e672262aa6daf3%3A0x2be7229eacc07c23!2s59+Rue+Nationale%2C+75013+Paris!5e0!3m2!1sfr!2sfr!4v1508749989299" allowfullscreen></iframe>
+            </section>
+
+        </main>
+
+        <!-- Fermeture de la page -->
+        <footer>
+            <ul>
+                <li class="siteLogo">SpaceMan</li>
+                <li><a href="#">Conditions générales</a></li>
+                <li><a href="#">Crédits</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </footer>
+        
+    </body>
+
+</html>

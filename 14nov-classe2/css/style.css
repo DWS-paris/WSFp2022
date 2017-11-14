@@ -1,0 +1,155 @@
+/* 
+Style du reset
+*/
+    /* Supprimer toutes les marges de toutes les balises */
+    *{
+        margin: 0;
+        padding: 0;
+
+        /* Intégrer les paddinf et les borders dans la taille des blocs */
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    /* Configuration du Responsive Design */
+    html{
+        font-size: 62.5%; /* 1rem = 1rem */
+    }
+
+    body{
+        font-size: 1.5rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /* Aligner les balises LI */
+    li{
+        display: inline-block;
+        margin-right: 1rem;
+    }
+
+    img{
+        max-width: 100%;
+    }
+/**/
+
+
+/* 
+Style header
+*/
+    header, footer{
+        /* Le texte est en blanc */
+        color: white;
+
+        /* Ajouter une image de fond */
+        background-image: url('../img/back.jpg');
+
+        padding: 2rem;
+    }
+
+    /* Sélectionner une balise par sa classe */
+    .siteLogo{
+        font-size: 3rem;
+    }
+
+    nav, footer ul, main {
+        /* Définir une largeur maximale */
+        max-width: 90rem;
+
+        /* Centrer une balise de type block réduite en largeur */
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        margin: 2rem auto;
+    }
+/**/
+
+/* 
+Style Main
+*/
+    /* Sélectionner une balise par son ID */
+    #profilPicture{
+
+        /* Arrondir le bloc */
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+
+        width: 5rem;
+        height: 5rem;
+
+        margin-right: 1rem;
+
+        /* Habiller l'image avec le texte qui le suit */
+        float: left;
+    }
+
+    section{
+        margin-bottom: 3rem;
+    }
+
+    #aboutSection p{
+        display: inline-block;
+        width: 49%;
+    }
+
+    figure {
+        /* Placer les figures sur une ligne */
+        display: inline-block;
+        width: 24%;
+
+        /* Bloquer les enfants dans le parent */
+        position: relative;
+    }
+
+    figcaption{
+        /* Sortir les balises du flux pour le replacer */
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+
+        /* Couleur de fond à 70% d'opacité */
+        background-color: rgba(255, 255, 255, .7);
+    }
+
+    /* Aligner le form et la iframe */
+    form, iframe{
+        display: inline-block;
+        width: 48%;
+
+        /* Aligner les balises en haut */
+        vertical-align: top;
+    }
+
+    input, textarea{
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background-color: #eee;
+        border: none;
+    }
+
+    textarea{
+        min-height: 15rem;
+    }
+
+    button{
+        background-color: #0b0b2f;
+        border: none;
+        color: white;
+        padding: 1rem;
+    }
+
+    iframe{
+        height: 28rem;
+    }
+/* */
