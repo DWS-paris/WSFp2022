@@ -19,6 +19,7 @@ Style du reset
 
     body{
         font-size: 1.5rem;
+        text-align: center;
     }
 
     a {
@@ -54,6 +55,7 @@ Style header
     /* Sélectionner une balise par sa classe */
     .siteLogo{
         font-size: 3rem;
+        display: block;
     }
 
     nav, footer ul, main {
@@ -73,6 +75,10 @@ Style header
 /* 
 Style Main
 */
+    main {
+        padding: 2rem;
+    }
+
     /* Sélectionner une balise par son ID */
     #profilPicture{
 
@@ -81,29 +87,17 @@ Style Main
         -moz-border-radius: 50%;
         border-radius: 50%;
 
-        width: 5rem;
-        height: 5rem;
+        width: 10rem;
+        height: 10rem;
 
-        margin-right: 1rem;
-
-        /* Habiller l'image avec le texte qui le suit */
-        float: left;
+        margin-bottom: 2rem;
     }
 
     section{
         margin-bottom: 3rem;
     }
 
-    #aboutSection p{
-        display: inline-block;
-        width: 49%;
-    }
-
     figure {
-        /* Placer les figures sur une ligne */
-        display: inline-block;
-        width: 24%;
-
         /* Bloquer les enfants dans le parent */
         position: relative;
     }
@@ -118,15 +112,6 @@ Style Main
 
         /* Couleur de fond à 70% d'opacité */
         background-color: rgba(255, 255, 255, .7);
-    }
-
-    /* Aligner le form et la iframe */
-    form, iframe{
-        display: inline-block;
-        width: 48%;
-
-        /* Aligner les balises en haut */
-        vertical-align: top;
     }
 
     input, textarea{
@@ -151,5 +136,6 @@ Style Main
 
     iframe{
         height: 28rem;
+        width: 100%;
     }
 /* */
