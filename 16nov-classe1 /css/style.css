@@ -1,0 +1,132 @@
+/* 
+Reset
+*/
+    /* Sélectionner toutes les balises */
+    *{
+        /* Supprimer toutes les marges */
+        margin: 0; /* marge ext. */
+        padding: 0; /* marge int. */
+    }
+
+    body{
+        text-align: center;
+    }
+
+    /* 
+    Faire en sorte que les images ne soient 
+    jamais plus large que son parent 
+    */
+    img{
+        max-width: 100%;
+    }
+
+    a{
+        text-decoration: none;
+
+        /* La couleur est la même que celle du parent */
+        color: inherit;
+    }
+
+    li{
+        /* Changer le type de balise pour aligner les LI */
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    /* Sélectionner des balises par leur class */
+    .siteLogo{
+        font-size: 25px;
+    }
+
+    header, section{
+        margin-bottom: 50px;
+
+        /* Stopper le float */
+        clear: both;
+    }
+
+    h2{
+        color: white;
+        background-color: darkblue;
+        padding: 10px;
+        margin-bottom: 20px;
+
+        display: inline-block;
+    }
+
+/**/
+
+/* 
+Style header
+*/
+    header{
+        color: white;
+        padding: 20px;
+        background-image: url("../img/back.jpg");
+    }
+
+    /* Bloquer les enfants dans le parent */
+    nav{
+        position: relative;
+    }
+
+    nav .siteLogo{
+        display: block;
+    }
+/**/
+
+/* 
+Style main
+*/
+    main, nav{
+        /* Limiter la largeur maximale */
+        max-width: 600px;
+
+        /* Centrer un bloc réduit en largeur */
+        margin: auto;
+    }
+
+    main{
+        padding: 20px;
+    }
+
+    h1{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    /* Sélectionner une balise par son ID */
+    #profilPicture{
+        width: 100px;
+        margin-bottom: 10px;
+
+        /* Transformer un carré en rond */
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+    }
+
+    iframe{
+        width: 100%;
+        min-height: 250px;
+        border: none;
+    }
+/**/
+
+/* 
+Formulaire
+*/
+    input, textarea, button{
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #eee;
+        border: none;
+    }
+
+    button{
+        background-color: darkblue;
+        color: white;
+    }
+/**/
