@@ -6,6 +6,11 @@ Reset
         /* Supprimer toutes les marges */
         margin: 0; /* marge ext. */
         padding: 0; /* marge int. */
+
+        /* Intégrer les border et les padding dans la taille des balises */
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
     }
 
     body{
@@ -54,12 +59,16 @@ Reset
         display: inline-block;
     }
 
+    p {
+        margin-bottom: 15px;
+    }
+
 /**/
 
 /* 
 Style header
 */
-    header{
+    header, footer{
         color: white;
         padding: 20px;
         background-image: url("../img/back.jpg");
@@ -70,7 +79,7 @@ Style header
         position: relative;
     }
 
-    nav .siteLogo{
+    .siteLogo{
         display: block;
     }
 /**/
@@ -110,6 +119,23 @@ Style main
         width: 100%;
         min-height: 250px;
         border: none;
+        margin-top: 20px;
+    }
+    
+    figure {
+        /* Bloquer les enfants dans le parent */
+        position: relative;
+    }
+
+    figcaption {
+        /* Sortir la balise du flux pour la repositionner dans le parent */
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        background-color: rgba(255, 255, 255, .6);
+        padding: 10px;
+        width: 100%;
     }
 /**/
 
