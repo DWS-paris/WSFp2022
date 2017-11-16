@@ -13,8 +13,14 @@ Reset
         box-sizing: border-box;
     }
 
+    /* Configurer l'utilisation des em/rem */
+    html{
+        font-size: 62.5%; /* 1rem = 1rem */
+    }
+
     body{
         text-align: center;
+        font-size: 1.5rem; /* => 15px */
     }
 
     /* 
@@ -35,16 +41,16 @@ Reset
     li{
         /* Changer le type de balise pour aligner les LI */
         display: inline-block;
-        margin-left: 10px;
+        margin-left: 1rem;
     }
 
     /* Sélectionner des balises par leur class */
     .siteLogo{
-        font-size: 25px;
+        font-size: 2.5rem;
     }
 
     header, section{
-        margin-bottom: 50px;
+        margin-bottom: 5rem;
 
         /* Stopper le float */
         clear: both;
@@ -53,8 +59,8 @@ Reset
     h2{
         color: white;
         background-color: darkblue;
-        padding: 10px;
-        margin-bottom: 20px;
+        padding: 1rem;
+        margin-bottom: 2rem;
 
         display: inline-block;
     }
@@ -70,7 +76,7 @@ Style header
 */
     header, footer{
         color: white;
-        padding: 20px;
+        padding: 2rem;
         background-image: url("../img/back.jpg");
     }
 
@@ -89,25 +95,25 @@ Style main
 */
     main, nav{
         /* Limiter la largeur maximale */
-        max-width: 600px;
+        max-width: 60rem;
 
         /* Centrer un bloc réduit en largeur */
         margin: auto;
     }
 
     main{
-        padding: 20px;
+        padding: 2rem;
     }
 
     h1{
         font-size: 25px;
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
     }
 
     /* Sélectionner une balise par son ID */
     #profilPicture{
-        width: 100px;
-        margin-bottom: 10px;
+        width: 10rem;
+        margin-bottom: 1rem;
 
         /* Transformer un carré en rond */
         -webkit-border-radius: 50%;
@@ -117,9 +123,9 @@ Style main
 
     iframe{
         width: 100%;
-        min-height: 250px;
+        min-height: 25rem;
         border: none;
-        margin-top: 20px;
+        margin-top: 2rem;
     }
     
     figure {
@@ -134,7 +140,7 @@ Style main
         bottom: 0;
 
         background-color: rgba(255, 255, 255, .6);
-        padding: 10px;
+        padding: 1rem;
         width: 100%;
     }
 /**/
@@ -145,8 +151,8 @@ Formulaire
     input, textarea, button{
         display: block;
         width: 100%;
-        margin-bottom: 10px;
-        padding: 10px;
+        margin-bottom: 1rem;
+        padding: 1rem;
         background-color: #eee;
         border: none;
     }
@@ -155,4 +161,44 @@ Formulaire
         background-color: darkblue;
         color: white;
     }
+/**/
+
+
+
+
+/* 
+Requêtes média
+*/
+
+    /* Requête sur les écran d'une taille minimale de 600px */
+    @media screen and (min-width: 600px){
+
+        body{
+            text-align: left;
+        }
+
+        #profilPicture{
+            float: left;
+            width: 5rem;
+            height: 5rem;
+            margin-right: 1.5rem;
+        }
+
+        #aboutSection p, figure{
+            display: inline-block;
+            width: 49%;
+        }
+
+    } /* Fin de la requête 600px */
+
+
+    
+    @media screen and (min-width: 900px) {
+
+        figure{
+            width: 24%;
+        }
+        
+    } /* Fin de la requête 900px */
+
 /**/
